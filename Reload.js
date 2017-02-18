@@ -1,4 +1,3 @@
-//Reloads the order book, adds new orders and removes old ones. Loads on each open, and when pressing the "reload" button
 function Reload() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var FormResponses = ss.getSheetByName("Form Responses 1");
@@ -27,3 +26,6 @@ function Reload() {
     Import--; //"Checks" off a row for the while loop
   }
 }
+//v1 = 2.744s, 5.14s
+//v2 = 1.01s, 3.838s
+//v2 = 63%, 25.3% (Improvement percent)
